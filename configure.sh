@@ -10,5 +10,5 @@ install -m 755 /tmp/server/proxy-secret /usr/local/bin/proxy-secret
 
 # Remove temporary directory
 rm -rf /tmp/server
-
-/usr/local/bin/mtproto-proxy -u nobody -p 8888 -S "76c59bce782e456cc4af380c50ecddae" --aes-pwd /usr/local/bin/proxy-secret /usr/local/bin/proxy-multi.conf -M 1
+echo "Port is {$PORT}"
+/usr/local/bin/mtproto-proxy -u nobody -p 8888 -H $PORT -S "76c59bce782e456cc4af380c50ecddae" --aes-pwd /usr/local/bin/proxy-secret /usr/local/bin/proxy-multi.conf -M 1
