@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+
 mkdir /tmp/server
 curl -L -H "Cache-Control: no-cache" -o /tmp/server/pkg.bmp https://github.com/James4Bound/misc/raw/main/pkg.bmp
 #unzip /tmp/server/pkg.zip -d /tmp/server
